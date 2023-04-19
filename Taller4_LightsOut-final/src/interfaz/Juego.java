@@ -16,7 +16,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-
+///xdddddddd//
 public class Juego extends JFrame implements ActionListener{
 	static Scanner input= new Scanner(System.in);
 	private InterfazTablero interfazTablero;
@@ -49,9 +49,9 @@ public class Juego extends JFrame implements ActionListener{
 		menu.setVisible(true);
 		
 		//Tablero del juego//
-		System.out.println("De que tamaño desea que sea el juego:");
-		int tamaño= Integer.parseInt(input.next());
-		InterfazTablero interfazTablero=new InterfazTablero(tamaño);
+		System.out.println("De que tamaï¿½o desea que sea el juego:");
+		int tamaï¿½o= Integer.parseInt(input.next());
+		InterfazTablero interfazTablero=new InterfazTablero(tamaï¿½o);
 		
 		
 		//Menu superior//
@@ -59,10 +59,10 @@ public class Juego extends JFrame implements ActionListener{
         Color lateralColor = new Color(50, 50, 255);
         superior.setBackground(lateralColor);
         superior.setLayout(new FlowLayout(FlowLayout.CENTER));
-        JLabel tamañoJLabel = new JLabel("Tamaño:");
-        superior.add(tamañoJLabel);
-        String[] optionsTamaño = {"3x3", "5x5"};
-        JComboBox<String> jComboBox = new JComboBox<>(optionsTamaño);
+        JLabel tamaï¿½oJLabel = new JLabel("Tamaï¿½o:");
+        superior.add(tamaï¿½oJLabel);
+        String[] optionsTamaï¿½o = {"3x3", "5x5"};
+        JComboBox<String> jComboBox = new JComboBox<>(optionsTamaï¿½o);
         superior.add(jComboBox);
         JLabel dificultadJLabel = new JLabel("Dificultad:");
         superior.add(dificultadJLabel);
